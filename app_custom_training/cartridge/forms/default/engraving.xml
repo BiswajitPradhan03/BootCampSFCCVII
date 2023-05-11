@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<form xmlns="http://www.demandware.com/xml/form/2008-04-19">
+    <field formid="petName" label="Petname:" type="text" mandatory="true" max-length="50" />
+    
+    <action formid="submit" valid-form="true"/>
+    
+</form>

@@ -1,0 +1,48 @@
+ <nav class="navbar navbar-expand-md bg-inverse col-12">
+    <div class="close-menu clearfix d-lg-none">
+        <div class="back pull-left">
+        </div>
+    </div>
+    <div class="menu-group" role="navigation">
+        <ul class="nav navbar-nav" role="menu">
+            <isif condition="${pdict.categories}">
+                <isloop items="${pdict.categories}" var="category">
+                    <isif condition="${category.attr1}">
+                        <li class="nav-item dropdown" role="presentation">
+                            <a href="<isprint value=" ${category.url}" encoding="htmldoublequote" />"
+                            id="${category.id}" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false" tabindex="0">${category.name}</a>
+                            <ul class="dropdown-menu" role="menu" aria-hidden="true" aria-label="${category.id}">
+                                <isloop items="${category.subCategories}" var="category">
+                                    <isif condition="${category.subCategories}">
+                                        <li class="dropdown-item dropdown" role="presentation">
+                                            <a href="${category.url}" id="${category.id}"
+                                                class="dropdown-link dropdown-toggle" role="button"
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                                tabindex="0">${category.name}</a>
+
+
+                                        </li>
+                                    <iselse/>
+                                        <li class="dropdown-item" role="presentation">
+                                            <a href="${category.url}" id="${category.id}" role="menuitem"
+                                                class="dropdown-link" tabindex="0">${category.name}</a>
+                                            <h1>Assigned Products: ${category.number}</h1>
+                                        </li>
+                                    </isif>
+                                </isloop>
+                            </ul>
+                        </li>
+                    <iselse/>
+                        <li class="nav-item" role="presentation">
+                            <a href="<isprint value=" ${category.url}" encoding="htmldoublequote" />"
+                            id="${category.id}" class="nav-link" role="link" tabindex="0">${category.name}</a>
+                        </li>
+                    </isif>
+                </isloop>
+            </isif>
+
+        </ul>
+    </div>
+    
+</nav>

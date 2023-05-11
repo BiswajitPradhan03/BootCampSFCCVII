@@ -1,0 +1,11 @@
+/* Define the initial position and transition properties for the product image */
+.product-image {
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Define the transform property for the product image when hovered over */
+  .product-image:hover {
+    transform: translateX(20px); /* Adjust the desired amount of slide */
+  }
+  

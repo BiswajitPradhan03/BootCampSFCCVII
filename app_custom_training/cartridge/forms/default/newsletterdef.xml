@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<form xmlns="http://www.demandware.com/xml/form/2008-04-19">
+    <field formid="name" label="Name:" type="string" mandatory="true" max-length="50" />
+    <field formid="age" label="Age:" type="integer" mandatory="true" max-length="50" />
+    <field formid="mail" label="Email:" type="string" mandatory="true" max-length="50" />
+    <field formid="gender" label="Gender:" type="string" mandatory="true" max-length="50" />
+    <field formid="programmingLanguages" label="Programming Languages" type="string" mandatory="true" max-length="50" />
+    <field formid="department" label="Department:" type="string" mandatory="false" max-length="50" />
+    <action formid="submit" valid-form="true"/>
+    <action formid="cancel" valid-form="false"/>
+</form>
