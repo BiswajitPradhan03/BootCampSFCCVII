@@ -1,6 +1,0 @@
-<button type="button" class="remove-btn-right remove-product btn btn-right" data-toggle="modal"
-    data-target=".cart.cart-page #removeProductModal" data-pid="${lineItem.id}" data-name="${lineItem.productName}"
-    data-action="${pdict.actionUrls.removeProductLineItemUrl}" data-uuid="${lineItem.UUID}"
-    aria-label="${Resource.msgf('text.remove.line.item', 'cart', null, lineItem.productName)}">
-    <span aria-hidden="true"><img src="${URLUtils.staticURL('/images/icons8-trash-32.png')}" style="width:25px;"></span>
-</button>
