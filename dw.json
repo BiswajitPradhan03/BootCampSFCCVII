@@ -1,0 +1,12 @@
+{
+    "hostname": "dev12-direct-carters.demandware.net",
+    "code-version": "test",
+    "cartridge": [
+        "app_custom_training",
+        "modules",
+        "app_storefront_base",
+        "bm_app_storefront_base"
+    ],
+    "username": "Guruprasada.mangane@carters.com",
+    "password": "Summer@1234"
+}
