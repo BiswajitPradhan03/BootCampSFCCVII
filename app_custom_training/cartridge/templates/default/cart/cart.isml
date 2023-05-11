@@ -20,30 +20,27 @@
     </div>
 
     <div class="container">
-        
+        <h1 class="page-title">${Resource.msg('title.cart', 'cart', null)}</h1>
         <div class="row cart-header">
-            <div class="col-sm-4 hidden-xs-down mt-3">
-                <h4>
-
-                    Bag
-                </h4>
-                
+            <div class="col-sm-4 hidden-xs-down">
+                <a class="continue-shopping-link" href="${URLUtils.url('Home-Show')}"
+                    title="${Resource.msg('link.continue.shopping', 'cart', null)}">
+                    ${Resource.msg('link.continue.shopping', 'cart', null)}
+                </a>
             </div>
-            
-            <div class="col-sm-5 text-right hidden-xs-down mt-3">
-
-                <div class="text-right">
-                    <style>
-                        h3 {
-                            text-indent: 380px;
-                        }
-                    </style>
-                    <h3>Summary</h3>
+            <div class="col-sm-3 text-center">
+                <h2 class="number-of-items">${Resource.msgf('label.number.items.in.cart', 'cart', null, pdict.numItems)}
+                </h2>
+            </div>
+            <div class="col-sm-5 text-right hidden-xs-down">
+                <div>
+                    <span>${Resource.msg('info.need.help', 'cart', null)}</span>
+                    <span><a class="help-phone-number"
+                            href="tel:${Resource.msg('info.phone.number', 'common', null)}">${Resource.msg('info.phone.number', 'common', null)}</a></span>
                 </div>
-
             </div>
         </div>
-        
+        <hr class="no-margin-top">
     </div>
 
     <isif condition="${pdict.items.length === 0}">
@@ -74,17 +71,13 @@
                 </div>
                 <!---totals, and checkout actions--->
                 <div class="col-sm-5 col-md-4 totals">
-                    
+                    <isinclude template="cart/cartPromoCode" />
                     <div class="coupons-and-promos">
                         <isinclude template="cart/cartCouponDisplay" />
                     </div>
-
-
                     <div class="row">
                         <isinclude template="cart/cartShippingMethodSelection" />
                     </div>
-
-
                     <isinclude template="cart/cartTotals" />
                     <div class="row">
                         <div class="col-12 checkout-continue">
@@ -101,4 +94,9 @@
     <div class="container">
         <isslot id="cart-recommendations-m" description="Recommended products" context="global" />
     </div>
+    <div class="cart-item">
+        <div class="product-name">
+            <h2>${item.productName}</h2>
+            <p>${item.petName}</p><!-- Display engraving text for line item -->
+        </div>
 </isdecorate>
