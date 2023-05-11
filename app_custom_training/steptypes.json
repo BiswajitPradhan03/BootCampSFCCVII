@@ -1,0 +1,38 @@
+
+{
+  "step-types": {
+    "script-module-step": [
+      {
+        "@type-id": "custom.krishna",
+        "@supports-parallel-execution": "true",
+        "@supports-site-context": "true",
+        "@supports-organization-context": "false",
+        "description": "Get all products assigned to a site",
+        "module": "app_custom_training/cartridge/scripts/steps/steps.js",
+        "function": "execute",
+        "parameters": {
+          "parameter": [
+            {
+              "@name": "IMPEX",
+              "@type": "string",
+              "@required": "false",
+              "description": "path."
+            }
+          ]
+        },
+        "status-codes": {
+          "status": [
+            {
+              "@code": "ERROR",
+              "description": "Used when the step failed with an error."
+            },
+            {
+              "@code": "FINISHED",
+              "description": "Used when the step finished successfully."
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

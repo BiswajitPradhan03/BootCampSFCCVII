@@ -1,0 +1,8 @@
+<h3>Success!!</h3>
+
+<p>Name: ${pdict.customObjview.custom.name}</p>
+<p>Age: ${pdict.customObjview.custom.age}</p>
+<p>Mail: ${pdict.customObjview.custom.mail}</p>
+<p>Gender: ${pdict.customObjview.custom.gender}</p>
+<p>Programming Languages Known: ${pdict.customObjview.custom.programmingLanguages}</p>
+<p>Department: ${pdict.customObjview.custom.department}</p>

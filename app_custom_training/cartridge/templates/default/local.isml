@@ -1,0 +1,25 @@
+<isif condition="${dw.system.Site.getCurrent().getCustomPreferenceValue('enableBadge')}">
+    <isif condition="${pdict.product.Badge === 'New Arrival'}">
+        <img src="${URLUtils.staticURL('/images/Newarrival.png')}" style="width:100px;">
+        style="width:100px;">
+
+        <p>"${pdict.product.Badge}"</p>
+    <iselseif condition="${pdict.product.Badge === 'Trending'}">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ58V02m9GndKX4XRIff8DYzgmhzdZv4DjvFzwlQgYa&s"
+                style="width:100px;">
+            <p>"${pdict.product.Badge}"</p>
+        <iselse/>
+            <img src="https://w7.pngwing.com/pngs/230/962/png-transparent-group-of-people-logo-seychelles-national-youth-council-logo-youth-ministry-youth-miscellaneous-child-orange.png"
+                style="width:100px;">
+            <p>"${pdict.product.Badge}"</p>
+
+    </isif>
+
+
+
+
+<iselse/>
+
+
+
+</isif>

@@ -1,0 +1,19 @@
+<isloop iterator="${pdict.profiles}" alias="profile">
+    <table>
+        <tr>
+            <td>Firstname:</td>
+            <td>${profile.Fname}</td>
+        </tr>
+
+        <tr>
+            <td>Lastname:</td>
+            <td>${profile.Lname}</td>
+        </tr>
+        <tr>
+            <td>Office:</td>
+            <td>${profile.office}</td>
+        </tr>
+
+    </table>
+
+</isloop>

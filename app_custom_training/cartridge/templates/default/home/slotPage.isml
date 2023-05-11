@@ -1,0 +1,234 @@
+<isscript>
+        var assets = require('*/cartridge/scripts/assets.js');
+        assets.addJs('/js/productTile.js');
+        assets.addCss('/css/homePage.css');
+</isscript>
+<div class="container text-center">
+    <iscomment>
+        <p class="title" style="font-size:20px; margin: 0">Nike Pegasus 40</p>
+        <p class="subtitle" style="font-size:50px; margin: 0; line-height: 1"><strong>THE WORLD RUNS <br>IN
+                PEGASUS</strong>
+        </p><br>
+        <p style="font-size=20px">Meet the latest update to the shoe that is trusted by the runners of all kinds for
+            four
+            decades</p>
+    </iscomment>
+
+    <p> ${Resource.msg('promo.msg', 'homePage', null)}</p>
+
+
+
+
+
+
+    <a href="${URLUtils.url('Home-Show')}"><button class="mybtn1">Shop</button></a>
+</div>
+
+<div class="row">
+    <div class="col-sm-4">
+        <div class="card img-fluid">
+            <a href="${URLUtils.url('Search-Show')}?cgid=Women"><img class="card-img-top"
+                    src="${URLUtils.staticURL('/images/I1.jpeg')}" alt="Card image" style="width:100%"></a>
+            <div class="card-img-overlay-content">
+                <a href="${URLUtils.url('Search-Show')}?cgid=Women" class="btn btn-light"
+                    style="color:black ;border-radius:30px ">Women</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="card img-fluid">
+            <a href="${URLUtils.url('Search-Show')}?cgid=Women"><img class="card-img-top"
+                    src="${URLUtils.staticURL('/images/I2.jpeg')}" alt="Card image" style="width:100%;heigth:80%;"></a>
+            <div class="card-img-overlay-content" style="position:absolute; bottom:0; color:white">
+
+
+                <a href="${URLUtils.url('Search-Show')}?cgid=Women" class="btn btn-light"
+                    style="color:black ;border-radius:30px ">Kid</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="card img-fluid">
+            <a href="${URLUtils.url('Search-Show')}?cgid=Men"> <img class="card-img-top"
+                    src="${URLUtils.staticURL('/images/I3.jpeg')}" alt="Card image" style="width:100%;heigth:100%;"></a>
+            <div class="card-img-overlay-content">
+
+
+                <a href="${URLUtils.url('Search-Show')}?cgid=Men" class="btn btn-light"
+                    style="color:black ;border-radius:30px ">Men</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+<br><br>
+<div style="line-height:2; margin-bottom:2em; width: 1200px;">
+    <h2><strong>Top Kicks Under $8000</strong></h2>
+    <div style="overflow: auto;">
+        <ul class="list-group list-group-horizontal">
+            <a href="${URLUtils.url('Product-Show')}?pid=White%20Saree"
+                style="text-decoration: none;margin-right: 10px;">
+                <img src="${URLUtils.staticURL('/images/Shoe1.png')}" alt="not found">
+                <div class="d-flex justify-content-between list-group-item" style="color:black">
+                    <div>
+                        <p class="text-left">Nike Air Max SC SE<br>Women's Shoes</p>
+                    </div>
+                    <div>₹7200</div>
+                </div>
+            </a>
+            <a href="${URLUtils.url('Product-Show')}?pid=formal_pant"
+                style="text-decoration: none; margin-right: 10px;">
+                <img src="${URLUtils.staticURL('/images/Shoe2.png')}" alt="not found">
+                <div class="d-flex justify-content-between list-group-item" style="color:black">
+                    <div>
+                        <p class="text-left">Nike Court Vision Low<br>Men's Shoes</p>
+                    </div>
+                    <div>₹4995</div>
+                </div>
+            </a>
+            <a href="${URLUtils.url('Product-Show')}?pid=suit_pant" style="text-decoration: none;margin-right: 10px;">
+                <img src="${URLUtils.staticURL('/images/Shoe3.png')}" alt="not found">
+                <div class="d-flex justify-content-between list-group-item" style="color:black">
+                    <div>
+                        <p class="text-left">NikeCourt Legacy<br>Men's Shoes</p>
+                    </div>
+                    <div>₹5695</div>
+                </div>
+            </a>
+            <a href="${URLUtils.url('Product-Show')}?pid=T-shirts" style="text-decoration: none; margin-right: 10px;">
+                <img src="${URLUtils.staticURL('/images/Shoe1.png')}" alt="not found">
+                <div class="d-flex justify-content-between list-group-item" style="color:black">
+                    <div>
+                        <p class="text-left">Nike Revolution 6<br>Women's Shoes</p>
+                    </div>
+                    <div>₹3695</div>
+                </div>
+            </a>
+            <a href="${URLUtils.url('Product-Show')}?pid=Polos-1" style="text-decoration: none; margin-right: 10px;">
+                <img src="${URLUtils.staticURL('/images/Shoe1.png')}" alt="not found">
+                <div class="d-flex justify-content-between list-group-item" style="color:black">
+                    <div>
+                        <p class="text-left">NikeDunk Low<br>Women's Shoes</p>
+                    </div>
+                    <div>₹6495</div>
+                </div>
+            </a>
+        </ul>
+    </div>
+</div>
+<div class="container" style="line-height:2; margin-bottom:2em">
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="card img-fluid" style="width:500px">
+                <a href="${URLUtils.url('Search-Show')}?cgid=Men"><img class="card-img-top"
+                        src="${URLUtils.staticURL('/images/Trending1.png')}" alt="Card image"
+                        style="width:100%;heigth:100%;"></a>
+                <div class="card-img-overlay-content" style="position:absolute; bottom:0; color:white">
+                    <h4 class="card-title">Nike Tiger woods 13</h4>
+                    <p class="card-text">App Early Access</p>
+                    <a href="${URLUtils.url('Search-Show')}?cgid=Men" class="btn btn-light"
+                        style="color:black ;border-radius:30px ">Get it Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card img-fluid" style="width:500px">
+                <a href="${URLUtils.url('Search-Show')}?cgid=Women"><img class="card-img-top"
+                        src="${URLUtils.staticURL('/images/Trending2.png')}" alt="Card image"
+                        style="width:100%;heigth:100%;"></a>
+                <div class="card-img-overlay-content" style="position:absolute; bottom:0; color:white">
+                    <h4 class="card-title">Meet The Go</h4>
+                    <p class="card-text">New Nike Leggings.</p>
+                    <a href="${URLUtils.url('Search-Show')}?cgid=Women" class="btn btn-light"
+                        style="color:black; border-radius:30px">Shop</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="card img-fluid" style="width:500px">
+                <img class="card-img-top" src="${URLUtils.staticURL('/images/I4.jpeg')}" alt="Card image"
+                    style="width:100%;">
+                <div class="card-img-overlay-content" style="position:absolute; bottom:0; color:white">
+
+                    <a href="${URLUtils.url('Search-Show')}?cgid=Women" class="btn btn-light"
+                        style="color:black ;border-radius:30px ">Women</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card img-fluid" style="width:500px">
+                <a href="${URLUtils.url('Search-Show')}?cgid=Men"><img class="card-img-top"
+                        src="${URLUtils.staticURL('/images/I5.jpeg')}" alt="Card image" style="width:100%;"></a>
+                <div class="card-img-overlay-content" style="position:absolute; bottom:0; color:white">
+                    <a href="${URLUtils.url('Search-Show')}?cgid=Men" class="btn btn-light"
+                        style="color:black ;border-radius:30px ">Kid</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card img-fluid" style="width:500px">
+                <a href="${URLUtils.url('Search-Show')}?cgid=Men"> <img class="card-img-top"
+                        src="${URLUtils.staticURL('/images/I6.jpeg')}" alt="Card image" style="width:100%;"></a>
+                <div class="card-img-overlay-content" style="position:absolute; bottom:0; color:white">
+                    <a href="${URLUtils.url('Search-Show')}?cgid=Men" class="btn btn-light"
+                        style="color:black ;border-radius:30px ">Men</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <div class="container text-center" style="line-height:2 margin-bottom:2em background-color:grey">
+        <div class="row expand-on-hover">
+            <div class="col-md-3 mb-3 text-left">
+                <strong>Icons</strong><br>
+                Air Force 1<br>
+                Huarache<br>
+                Air Max 90<br>
+                Air Max 95 <br>
+                Air Max 97<br>
+                Air Max 270 <br>
+                Air Max 720 <br>
+                All Air Max <br>
+                Vapormax
+            </div>
+            <div class="col-md-3 mb-3 text-left">
+                <strong>Shoes</strong><br>
+                All Shoes<br>
+                Custom Shoes<br>
+                Jordan Shoes<br>
+                Running Shoes <br>
+                Basketball Shoes <br>
+                Football Shoes <br>
+                Gym & Training Shoes <br>
+                Lifestyle Shoes
+            </div>
+            <div class="col-md-3 mb-3 text-left">
+                <strong>Clothing</strong><br>
+                <a href="${URLUtils.url('Search-Show')}?cgid=Men"> All Clothing<br></a>
+                Modest Wear<br>
+                Hoodies & Pullovers<br>
+                Shirts & Tops <br>
+                Jackets<br>
+                Compression & Nike Pro<br>
+                Trousers & Leggings<br>
+                Shorts
+            </div>
+            <div class="col-md-3 mb-3 text-left">
+                <strong>Kids'</strong><br>
+                Infant & Toddler Shoes<br>
+                Kids' Shoes<br>
+                Kids' Jordan Shoes<br>
+                Kids' Basketball Shoes<br>
+                Kids' running Shoe<br>
+                Kids' Clothing<br>
+            </div>
+        </div>
+    </div>

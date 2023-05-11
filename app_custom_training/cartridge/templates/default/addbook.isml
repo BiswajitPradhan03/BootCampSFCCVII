@@ -1,0 +1,20 @@
+<isloop items="${pdict.addressBook}" var="Address" status="loopstatus">
+      <table>
+        <tr>
+            <td>Address1:</td>
+            <td>${Address.address.city}</td>
+        </tr>
+        
+        <tr>
+            <td>Address2:</td>
+            <td>${Address.address.address1}}</td>
+        </tr>
+        <tr>
+            <td>City:</td>
+            <td>${Address.address.address2}</td>
+        </tr>
+       
+    </table>
+    <hr>
+
+</isloop>

@@ -1,0 +1,27 @@
+<div class="d-flex">
+
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="card" style="width:400px">
+                <img class="card-img-top" src="${item.imageObj.small[0].url}" style="width:100%">
+                <div class="card-body">
+                    <div class="line-item-name">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                ${item.name}<br>
+                                <isinclude template="wishlist/components/addToCartButton" />
+                            </div>
+                            <br>
+
+                        </div>
+                        <div class="col-sm-2">
+                            <isinclude template="wishlist/components/productListItemProductPrice" />
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
