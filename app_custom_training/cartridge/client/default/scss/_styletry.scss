@@ -1,0 +1,7 @@
+$wid : 400px;
+
+@mixin widths {
+    width: $wid;
+    background-color: #000;
+    border-color: black;
+  }
