@@ -1,0 +1,15 @@
+<div class="card ghost customer border-0">
+    <div class="card-header">
+        <h2 class="card-header-custom">${Resource.msg('heading.checkout.customer', 'checkout', null)}</h2>
+    </div>
+</div>
+
+<div class="card customer-section border-0">
+    <div class="card-header text-center border-0">
+        <h2 class="card-header-custom"><strong>${Resource.msg('heading.checkout.customer.changed1', 'checkout', null)}<br />
+                ${Resource.msg('heading.checkout.customer.changed2', 'checkout', null)}</strong></h2>
+    </div>
+    <div class="customer-error"></div>
+    <isinclude template="checkout/customer/customerCard" />
+    <isinclude template="checkout/customer/customerOAuthCard" />
+</div>
