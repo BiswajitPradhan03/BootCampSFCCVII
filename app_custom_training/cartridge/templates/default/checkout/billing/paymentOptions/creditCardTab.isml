@@ -1,0 +1,17 @@
+
+<li class="nav-item" data-method-id="${paymentOption.ID}">
+    <div class="nav-link credit-card-tab active" data-toggle="tab"  role="tab"  id="tpd"
+        >
+        <div class="row">
+
+
+            <div class="col-1">
+                <img class="credit-card-option" src="${URLUtils.staticURL('/images/credit.png')}" height="32"
+                    style="margin-left:-70%" alt="${paymentOption.name}" title="${paymentOption.name}">
+            </div>
+            <div class="col-4">
+                <p>${Resource.msg('field.credit.card.msg', 'creditCard', null)}</p>
+            </div>
+        </div>
+    </div>
+</li>
