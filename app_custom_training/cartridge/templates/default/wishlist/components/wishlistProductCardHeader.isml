@@ -1,0 +1,7 @@
+<div class="line-item-header">
+    <!--- product name--->
+    <div class="line-item-name">
+    ${item.name}
+    </div>
+    
+</div>

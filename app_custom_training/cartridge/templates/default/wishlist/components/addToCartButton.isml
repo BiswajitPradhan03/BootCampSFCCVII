@@ -1,21 +1,8 @@
-<div class="col-sm-12 add-to-cart-wishList">
+<div class="col-sm-6 add-to-cart-wishList">
     <input type="hidden" class="add-to-cart-url" value="${pdict.addToCartUrl}">
-    <button class="add-to-cart btn btn-light" data-pid="${item.pid}" data-url="${URLUtils.url('Cart-AddProduct')}"
+    <button class="add-to-cart btn btn-primary" data-pid="${item.pid}" data-url="${URLUtils.url('Cart-AddProduct')}"
         data-option="${JSON.stringify(item.selectedOptions)}" ${!item.available ? "disabled" : ""}>
-        <iscomment> <i class="fa fa-shopping-bag"></i> </iscomment>
+        <i class="fa fa-shopping-bag"></i>
         ${Resource.msg('button.addtocart', 'common', null)}
     </button>
-    <div class="row">
-        <div class="hidden-md-">
-            <!---hide medium, sm, xs--->
-            <button type="button" class="remove-btn remove-from-wishlist btn btn-dark"
-                data-url="${URLUtils.url('Wishlist-RemoveProduct', 'pid', item.pid)}" <isif
-                condition="${item.variantAttributes}">
-                aria-label="${Resource.msgf('wishlist.remove.item.variant', 'wishlist', null, item.name, item.variantAttributes)}">
-                <iselse>
-                    aria-label="${Resource.msgf('wishlist.remove.item', 'wishlist', null, item.name)}">
-                    </isif>
-                    <span aria-hidden="true">&times;</span>
-                    edit</button>
-        </div>
-    </div>
+</div>
