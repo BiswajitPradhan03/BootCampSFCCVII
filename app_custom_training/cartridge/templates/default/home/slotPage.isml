@@ -4,67 +4,51 @@
         assets.addCss('/css/homePage.css');
 </isscript>
 <div class="container text-center">
-    <iscomment>
-        <p class="title" style="font-size:20px; margin: 0">Nike Pegasus 40</p>
-        <p class="subtitle" style="font-size:50px; margin: 0; line-height: 1"><strong>THE WORLD RUNS <br>IN
-                PEGASUS</strong>
-        </p><br>
-        <p style="font-size=20px">Meet the latest update to the shoe that is trusted by the runners of all kinds for
-            four
-            decades</p>
-    </iscomment>
-
-    <p> ${Resource.msg('promo.msg', 'homePage', null)}</p>
-
-
-
-
-
-
-    <a href="${URLUtils.url('Home-Show')}"><button class="mybtn1">Shop</button></a>
+    <div class="c1">
+        <h4> ${Resource.msg('promo.msg', 'homePage', null)}</h4>
+        <h2 class="text1"><strong>${Resource.msg('promo.msg1', 'homePage', null)}</strong></h2>
+        <p>${Resource.msg('promo.msg2', 'homePage', null)}</p>
+        <a href="${URLUtils.url('Home-Show')}"><button class="mybtn1">${Resource.msg('promo.msg3', 'homePage', null)}</button></a>
+    </div>
 </div>
 
 <div class="row">
     <div class="col-sm-4">
         <div class="card img-fluid">
             <a href="${URLUtils.url('Search-Show')}?cgid=Women"><img class="card-img-top"
-                    src="${URLUtils.staticURL('/images/I1.jpeg')}" alt="Card image" style="width:100%"></a>
+                    src="${URLUtils.staticURL('/images/I1.jpeg')}" alt="Card image"></a>
             <div class="card-img-overlay-content">
-                <a href="${URLUtils.url('Search-Show')}?cgid=Women" class="btn btn-light"
-                    style="color:black ;border-radius:30px ">Women</a>
+                <a href="${URLUtils.url('Search-Show')}?cgid=Women"
+                    class="btn btn-light b1 btn-rounded rounded-pill text-dark">Women</a>
             </div>
         </div>
     </div>
     <div class="col-sm-4">
         <div class="card img-fluid">
             <a href="${URLUtils.url('Search-Show')}?cgid=Women"><img class="card-img-top"
-                    src="${URLUtils.staticURL('/images/I2.jpeg')}" alt="Card image" style="width:100%;heigth:80%;"></a>
-            <div class="card-img-overlay-content" style="position:absolute; bottom:0; color:white">
-
-
-                <a href="${URLUtils.url('Search-Show')}?cgid=Women" class="btn btn-light"
-                    style="color:black ;border-radius:30px ">Kid</a>
+                    src="${URLUtils.staticURL('/images/I2.jpeg')}" alt="Card image"></a>
+            <div class="card-img-overlay-content">
+                <a href="${URLUtils.url('Search-Show')}?cgid=Women"
+                    class="btn btn-light b1 btn-rounded rounded-pill text-dark">Kid</a>
             </div>
         </div>
     </div>
     <div class="col-sm-4">
         <div class="card img-fluid">
-            <a href="${URLUtils.url('Search-Show')}?cgid=Men"> <img class="card-img-top"
-                    src="${URLUtils.staticURL('/images/I3.jpeg')}" alt="Card image" style="width:100%;heigth:100%;"></a>
+            <a href="${URLUtils.url('Search-Show')}?cgid=Men"> <img class="card-img-top b1"
+                    src="${URLUtils.staticURL('/images/I3.jpeg')}" alt="Card image"></a>
             <div class="card-img-overlay-content">
-
-
-                <a href="${URLUtils.url('Search-Show')}?cgid=Men" class="btn btn-light"
-                    style="color:black ;border-radius:30px ">Men</a>
+                <a href="${URLUtils.url('Search-Show')}?cgid=Men"
+                    class="btn btn-light b1 btn-rounded rounded-pill text-dark">Men</a>
             </div>
         </div>
     </div>
 
 </div>
 <br><br>
-<div style="line-height:2; margin-bottom:2em; width: 1200px;">
+<div style="line-height:2; margin-bottom:2em; width: 100%;">
     <h2><strong>Top Kicks Under $8000</strong></h2>
-    <div style="overflow: auto;">
+    <div style="overflow: auto; height:400px">
         <ul class="list-group list-group-horizontal">
             <a href="${URLUtils.url('Product-Show')}?pid=White%20Saree"
                 style="text-decoration: none;margin-right: 10px;">
