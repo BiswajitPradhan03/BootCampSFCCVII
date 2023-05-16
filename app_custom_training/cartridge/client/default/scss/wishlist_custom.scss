@@ -1,0 +1,19 @@
+@import "trymixing1.scss";
+
+.product-info{
+    width:350px;
+    height:500px;
+}
+.card-img-top{
+    width:100%;
+    height:350px
+}
+.add-to-cart{
+    @include b_radius;
+}
+.remove-from-wishlist{
+    @include b_radius;
+}
+.cart-shop{
+    width:70px;
+}
