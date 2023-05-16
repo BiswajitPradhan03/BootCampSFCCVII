@@ -122,6 +122,7 @@
   },
   "paths": {
     "base": "./cartridges/app_storefront_base/",
-    "training": "./cartridges/app_custom_training"
+    "training":"./cartridges/app_custom_training/",
+    "plugin" : " ./cartridges/plugin_wishlists/"
   }
 }

@@ -3,7 +3,8 @@
 var path = require('path');
 var webpack = require('sgmf-scripts').webpack;
 var ExtractTextPlugin = require('sgmf-scripts')['extract-text-webpack-plugin'];
-var sgmfScripts = require('sgmf-scripts');
+var jsFiles = require('sgmf-scripts').createJsPath();
+var scssFiles = require('sgmf-scripts').createScssPath();
 
 var bootstrapPackages = {
     Alert: 'exports-loader?Alert!bootstrap/js/src/alert',
@@ -22,17 +23,10 @@ var bootstrapPackages = {
 module.exports = [{
     mode: 'production',
     name: 'js',
-    entry: sgmfScripts.createJsPath(),
+    entry: jsFiles,
     output: {
-        path: path.resolve('./cartridges/plugin_wishlists/cartridge/static'),
+        path: path.resolve('./cartridges/app_storefront_base/cartridge/static'),
         filename: '[name].js'
-    },
-    resolve: {
-        alias: {
-            jquery: path.resolve(__dirname, '../storefront-reference-architecture/node_modules/jquery'),
-            bootstrap: path.resolve(__dirname, '../storefront-reference-architecture/node_modules/bootstrap'),
-            lodash: path.resolve(__dirname, '../storefront-reference-architecture/node_modules/lodash')
-        }
     },
     module: {
         rules: [
@@ -53,9 +47,9 @@ module.exports = [{
 }, {
     mode: 'none',
     name: 'scss',
-    entry: sgmfScripts.createScssPath(),
+    entry: scssFiles,
     output: {
-        path: path.resolve('./cartridges/plugin_wishlists/cartridge/static'),
+        path: path.resolve('./cartridges/app_storefront_base/cartridge/static'),
         filename: '[name].css'
     },
     module: {
@@ -79,8 +73,8 @@ module.exports = [{
                     loader: 'sass-loader',
                     options: {
                         includePaths: [
-                            path.resolve(process.cwd(), '../storefront-reference-architecture/node_modules/'),
-                            path.resolve(process.cwd(), '../storefront-reference-architecture/node_modules/flag-icon-css/sass')
+                            path.resolve('node_modules'),
+                            path.resolve('node_modules/flag-icon-css/sass')
                         ]
                     }
                 }]
