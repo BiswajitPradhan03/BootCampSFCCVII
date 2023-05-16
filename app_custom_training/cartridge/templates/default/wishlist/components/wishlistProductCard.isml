@@ -1,27 +1,62 @@
-<div class="d-flex">
+<isscript>
+    var assets = require('*/cartridge/scripts/assets.js');
+    assets.addCss('/css/wishlist_custom.css');
+</isscript>
 
-    <div class="row">
-        <div class="col-sm-4">
-            <div class="card" style="width:400px">
-                <img class="card-img-top" src="${item.imageObj.small[0].url}" style="width:100%">
-                <div class="card-body">
-                    <div class="line-item-name">
-                        <div class="row">
-                            <div class="col-sm-6">
-                                ${item.name}<br>
-                                <isinclude template="wishlist/components/addToCartButton" />
-                            </div>
-                            <br>
+<div class="d-flex flex-row">
+    <div class="d-flex flex-column">
+        <div class="card product-info uuid-${item.UUID} pid-${item.pid}">
 
+            <img class="card-img-top" src="${item.imageObj.small[0].url}"><br>
+            <div>
+                <div class="line-item-name">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            ${item.name}
                         </div>
-                        <div class="col-sm-2">
+                        <div class="col-sm-2"></div>
+                        <div class="col-sm-4 text-right">
                             <isinclude template="wishlist/components/productListItemProductPrice" />
                         </div>
-
+                        <div class="col-sm-6 cart-shop">
+                            <button class="add-to-cart btn btn-dark" data-pid="${item.pid}"
+                                data-url="${URLUtils.url('Cart-AddProduct')}"
+                                data-option="${JSON.stringify(item.selectedOptions)}" ${!item.available ? "disabled" : ""}>
+                                <i class="fa fa-shopping-bag"></i>
+                                ${Resource.msg('button.addtocart', 'common', null)}
+                            </button>
+                        </div>
+                        <div class="col-sm-2"></div>
+                        <div class="col-sm-4">
+                            <button type="button" class="remove-from-wishlist btn btn-dark text-center"
+                                data-url="${URLUtils.url('Wishlist-RemoveProduct', 'pid', item.pid)}" <isif
+                                condition="${item.variantAttributes}">
+                                aria-label="${Resource.msgf('wishlist.remove.item.variant', 'wishlist', null, item.name, item.variantAttributes)}">
+                                <iselse>
+                                    aria-label="${Resource.msgf('wishlist.remove.item', 'wishlist', null, item.name)}">
+                                    </isif>
+                                    <span class="small">Remove</span>
+                            </button>
+                        </div>
                     </div>
-
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+
+
+<iscomment>
+    <isinclude template="wishlist/components/wishlistProductCardHeader">
+
+        <button type="button" class="remove-btn-lg remove-from-wishlist btn btn-light"
+            data-url="${URLUtils.url('Wishlist-RemoveProduct', 'pid', item.pid)}" <isif
+            condition="${item.variantAttributes}">
+            aria-label="${Resource.msgf('wishlist.remove.item.variant', 'wishlist', null, item.name, item.variantAttributes)}">
+            <iselse>
+                aria-label="${Resource.msgf('wishlist.remove.item', 'wishlist', null, item.name)}">
+                </isif>
+                <span aria-hidden="true">&times;</span>
+        </button>
+</iscomment>

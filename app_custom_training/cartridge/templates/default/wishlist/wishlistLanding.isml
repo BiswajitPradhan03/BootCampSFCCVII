@@ -6,23 +6,16 @@
         assets.addCss('/css/login.css');
         assets.addJs('/js/login.js');
     </isscript>
-    <iscomment>
-        <div class="hero slant-down login-banner">
-            <h1 class="page-title">${Resource.msg('wishlist.hero.image.header', 'wishlist', null)}</h1>
-        </div>
-    </iscomment>
-
+    <div class="hero slant-down login-banner">
+        <h1 class="page-title">${Resource.msg('wishlist.hero.image.header', 'wishlist', null)}</h1>
+    </div>
     <div class="container ${pdict.loggedIn ? '' : 'login-page'}">
         <!---Breadcrumbs--->
-        <iscomment>
-            <isinclude template="components/breadcrumbs/pageBreadcrumbs" />
-        </iscomment>
+        <isinclude template="components/breadcrumbs/pageBreadcrumbs"/>
         <isif condition="${pdict.loggedIn}">
             <isinclude template="wishlist/components/wishlist" />
-            <iselse>
-                <isinclude template="wishlist/components/login" />
+        <iselse>
+            <isinclude template="wishlist/components/login" />
         </isif>
     </div>
-
-
 </isdecorate>
