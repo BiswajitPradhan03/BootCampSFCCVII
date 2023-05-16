@@ -1,0 +1,12 @@
+<isscript>
+        var assets = require('*/cartridge/scripts/assets');
+        assets.addJs('/js/search.js');
+        assets.addCss('/css/checkoutButton.css');
+    </isscript>
+<div class="mb-sm-3">
+    <a href="${URLUtils.https('Checkout-Begin')}" id="Don"
+        class="btn btn-dark checkout-btn ${pdict.valid.error ? 'disabled' : ''}" role="button">
+
+        <h5 class="text-white bg-dark-">Checkout</h5>
+    </a>
+</div>

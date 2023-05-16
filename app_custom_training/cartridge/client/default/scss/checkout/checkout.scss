@@ -37,3 +37,82 @@
     @include creditcard ;
     
 }
+#email-guest {
+    width : $wid;
+  
+  }
+  
+  
+  #CG {
+    @include widths;
+    
+  }
+  
+  #FG1{
+    @include widths;
+  }
+  #email{
+    width : $wid;
+  }
+  #password{
+    width : $wid;
+  }
+  #ps{
+    font-size: x-small;
+  }
+  #QN{
+    font-size: small;
+    font-weight: 400;
+  }
+  #deliver{
+    background-color: white;
+              color: black;
+              font-size: 18px;
+              border-radius: 20px;
+              padding: 20px 150px;
+              border: 2px solid black;
+        
+  }
+  .para{
+    color : gray;
+  }
+  .pararow {
+    margin-bottom: 20px;
+  }
+  #gray{
+    color : gray;
+  }
+  .headrow {
+    margin-bottom: 150px;
+  }
+  .address{
+    background-color: white;
+              color: black;
+              font-size: 10px;
+              border-radius: 20px;
+              padding: 50px 25px;
+              border: 2px solid black;
+  }
+  #new{
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    border-radius: 20px;
+    padding: 7px 0.001px;
+    border: 0.5px solid gray;
+  }
+  
+  #new:hover{
+    background-color: lightgray;
+  }
+  #update{
+    background-color: white;
+    color: gray;
+    font-size: 15px;
+    border-radius: 20px;
+    padding: 5px 5px;
+    border: 2px solid white;
+  }
+  .pararows {
+    margin-bottom: 40px;
+  }
